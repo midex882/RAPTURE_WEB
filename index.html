@@ -7,28 +7,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="stlyes.css">
     <style>
+        @font-face {
+            font-family:'andes' ;
+            src: url('fonts/Andes.ttf');
+        }
         body{
             margin: 0px;
+            box-sizing: border-box;
         }
         
         nav{
             display: flex;
             justify-content: space-around;
+            background-color: #1c1a15;
+            align-items: center;
+
 
         }
+        nav a{
+            margin-right: 3rem;
+            text-decoration: none;
+            color: #ed9e00;
+            font-family: 'andes';
+            font-size: 3rem;
+        }
+        #logo_nav{
+            display: flex;
+            width: fit-content;
+        }
         #logo_nav img{
-            width: 20%;
-            margin: 2rem 0px;
+            width: 4rem;
+            margin: 1rem ;
         }
         #secciones{
             display: flex;
             justify-content: space-around;
-            margin: 2rem 0px;
+            margin: 1rem ;
         }
         #login{
             display: flex;
             flex-direction: column;
-            margin: 2rem 0px;
+            margin: 1rem ;
+        }
+        #login form div label{
+            color: whitesmoke;
+            margin-right: 1rem ;
+        }
+        #user, #password, #button{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 0.3rem;
+        }
+        #boton{
+            width: 100%;
+            background-color: #ed9e00;
+            font
+        }
+        input{
+            background-color: transparent;
+            border: transparent;
+            border-bottom: 1px solid #ed9e00;
+           
         }
 
     </style>
@@ -39,8 +79,8 @@
             <img src="img/rapture_logo.png" alt="">
         </div>
         <div id="secciones">
-                <a href="">¿Qué es Rapture?</a>
-                <a href="">Nuestros líderes</a>
+                <a href="">¿Que es Rapture?</a>
+                <a href="">Nuestros lideres</a>
                 <a href="">Zonas</a>
                 <a href="">Detalles</a>
         </div>
@@ -51,7 +91,7 @@
                     <input name="user_field" class="nav_input" type="text">
                 </div>
                 <div id="password">
-                    <label for="pass_field">Contraseña</label>
+                    <label for="pass_field">Contraseña:</label>
                     <input name="pass_field" class="nav_input" type="password">
                 </div>
                 <div id="button"  >
