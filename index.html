@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Mi primerita web</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stlyes.css">
+    <style>
+        body{
+            margin: 0px;
+        }
+        
+        nav{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        #logo_nav img{
+            width: 20%;
+            margin: 2rem 0px;
+        }
+        #secciones{
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0px;
+        }
+        #login{
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="logo_nav">
+            <img src="img/rapture_logo.png" alt="">
+        </div>
+        <div id="secciones">
+                <a href="">¿Qué es Rapture?</a>
+                <a href="">Nuestros líderes</a>
+                <a href="">Zonas</a>
+                <a href="">Detalles</a>
+        </div>
+        <div id="login">
+            <form action="">
+                <div id="user">
+                    <label for="user_field">Usario:</label>
+                    <input name="user_field" class="nav_input" type="text">
+                </div>
+                <div id="password">
+                    <label for="pass_field">Contraseña</label>
+                    <input name="pass_field" class="nav_input" type="password">
+                </div>
+                <div id="button"  >
+                    <button id="boton">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+</body>
 </html>
