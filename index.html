@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Orelega+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles_index.css">
     <style>
         @font-face {
@@ -17,11 +21,16 @@
         }
         
         body{
+            display: flex;
             margin: 0px;
             box-sizing: border-box;
+            background-image: url('img/background.jpg');
+            align-items: center;
+            flex-direction: column;
         }
         
         nav{
+            top: 0px;
             display: flex;
             justify-content: space-around;
             background-color: #1c1a15;
@@ -31,11 +40,23 @@
             flex-wrap: wrap;
         }
         nav a{
-            margin-right: 3rem;
+            margin: 0px 2rem;
             text-decoration: none;
-            color: #ed9e00;
+            
             font-family: 'andes';
             font-size: 3rem;
+            color: transparent;
+            background-image: linear-gradient(
+	            to right,
+	            #6b3936 0,
+       	        #cb9b51 22%, 
+	            #f6e27a 45%,
+	            #f6f2c0 50%,
+	            #f6e27a 55%,
+	            #cb9b51 78%,
+	            #6b3936 100%
+	            );
+            -webkit-background-clip:text;
         }
         #logo_nav{
             display: flex;
@@ -70,8 +91,19 @@
         }
         #boton{
             width: 100%;
-            background-color: #ed9e00;
+            color: black;
+            background-image: linear-gradient(
+                to right,
+                #462523 0,
+                #cb9b51 22%, 
+                #d69810ad 45%,
+                #e9d14cc4 50%,
+                #d69810ad 55%,
+                #cb9b51 78%,
+                #462523 100%
+            );
             font-family: 'gothic';
+            font-weight: bold;
             border: darkgoldenrod;
         }
         input{
@@ -80,6 +112,61 @@
             border-bottom: 1px solid #ed9e00;
             font-family: 'gothic';
             color: whitesmoke;
+        }
+        .body_intro a{
+            margin-top: 2rem;
+            text-align: center;
+            width: fit-content;
+            font-family: 'andes';
+            font-size: 3.5rem;
+            color: transparent;
+            background-image: linear-gradient(
+	            to right,
+	            #6b3936 0,
+       	        #cb9b51 22%, 
+	            #f6e27a 45%,
+	            #fff89dc5 50%,
+	            #f6e27a 55%,
+	            #cb9b51 78%,
+	            #6b3936 100%
+	            );
+            -webkit-background-clip:text; 
+        }
+        .body_intro{
+            display: flex;
+            margin-top: 8rem;
+            background-color: #202020ee;
+            width: 80%;
+            color: whitesmoke;
+            padding: 0px 2rem;
+            flex-direction: column;
+            align-items: center;
+        }
+        .introduccion{
+            display: flex;
+            justify-content: center;
+            font-size: 1.6rem;
+            font-family: 'Libre Baskerville', serif;
+            text-align: center;
+        }
+        .body_main{
+            margin-top: 1rem;
+            background-color: #202020ee;
+            width: 80%;
+            color: #d6d6d6;
+            padding: 2rem;
+        }
+        .informacion{
+            text-align: justify;
+            font-family: 'Orelega One';
+            font-size: 1.4rem;
+        }
+        .retrato{
+            width: 140px;
+            float: right;
+            right: 0px;
+            top: 0px;
+            margin-left: 1rem;
         }
 
     </style>
@@ -90,9 +177,9 @@
             <a href="index.html"><img src="img/rapture_logo.png" alt=""></a>
         </div>
         <div id="secciones">
-                <a href="">¿Que es Rapture?</a>
+                
                 <a href="">Nuestros lideres</a>
-                <a href="">Zonas</a>
+                <a href="zones.html">Zonas</a>
                 <a href="">Detalles</a>
         </div>
         <div id="login">
@@ -111,6 +198,31 @@
             </form>
         </div>
     </nav>
-
+    <div class="body_intro">
+        <a alt="este enlace no lleva a ninguna parte">¿que es rapture?</a>
+        <p class="introduccion">-¿Acaso un hombre no tiene derecho al sudor de su propia frente?-</p>
+        <p class="introduccion">No, dice el hombre de Washington; pertenece a los pobres. No, dice el hombre del Vaticano; pertenece a Dios. No, dice el hombre de Moscú; pertenece a todos. -</p>
+        <p class="introduccion">-Yo rechacé esas respuestas; yo elegí lo imposible; elegí Rapture-</p>
+    </div>
+    <div class="body_main">
+        <p class="informacion">
+            <img  class="retrato" src="img/andrew.jpg" alt="">
+            Rapture nació como un sueño en la mente de su dueño y nuestro líder; Andrew Ryan. Ingeniero electrotécnico graduado con honores en el Instituto Tecnológico de Massaschussets,
+            comenzó la construción de la ciudad submarina haciendo uso de la tremenda fortuna que había amasado a lo largo de los años con su corporación Ryan Industries, que suministraba
+            electrodomésticos y aparatos eléctricos a toda una nación.  Andrew Ryan no estaba de acuerdo con cómo los ideales económicos del mundo moderno llevaban el mercado; Consideraba el capitalismo de los EEUU marxistas; consideraba el comunismo
+            una averración, y la religión la veía solo como una herramienta para el control de la población y la limitación de las libertades por medio de la palabra divina. Si pretendía encontrar un lugar donde 
+            vivir con sus propios ideales, donde pudiese expandir su fortuna y donde la gente pudiese ser libre, no bastaba con buscar en la superficie, así que buscó en el fondo del mar. <br> <br>
+            La ciudad se empezó a construir en 1940, y se tardó todo un año en adaptar el suelo marino a las necesidades de la ciudad. Se usaron trajes de buceo militares adaptados con taladradoras, relachadoras y excavadoras
+            incorporadas para facilitar el trabajo. Para el 5 de noviembre de 1946, la ciudad abrió sus puertas a los primeros residentes; grandes científicos, grandes artistas, filósofos y economistas, pero la construcción fue terminada en 1951. <br> <br>
+            Las primeras empresas en asentarse fueron Ryan Industries, Fontaine Fisheries, Apollo Suites y los establecimientos regentados por los residentes que se asentaban en la maravillosa utopía. En el año 1956, una de nuestras doctoras más brillantes, la 
+            doctora Brigid Tenenbaum descubrió una babosa marina con propiedades especiales, de donde nació el ADAM, el EVE, y los plásmidos. <br> <br>
+            Con esta tecnología, podemos modificar nuestras cadenas de ADN y obtener capacidades maravillosas como el teletransporte, la invocación de fuego con solo un chasquido de dedos, o la aparición de torbellinos de aire. Estos plásmidos son adquiribles en cualquuier
+            máquina expendedora del Jardín de las Recolectoras, a cambio de cierta cantidad de ADAM.
+        </p>
+        <p class="informacion">
+            Dijeron que sería imposible construir Rapture en el fondo oceánico, pero lo que era imposible era construir Rapture en cualquier otro lugar. En Rapture, el artista no ha de temer al censor,
+            el científico no está limitado por la nimia moral, y el grande no está constreñido por el pequeño. Y, con el sudor de tu frente, Rapture también puede ser tu ciudad. 
+        </p>
+    </div>
 </body>
 </html>
