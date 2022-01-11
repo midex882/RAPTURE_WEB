@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stlyes.css">
+    <link rel="stylesheet" href="styles_index.css">
     <style>
         @font-face {
             font-family:'andes' ;
             src: url('fonts/Andes.ttf');
         }
+        @font-face {
+            font-family:'gothic';
+            src: url('fonts/gothic.ttf');
+        }
+        
         body{
             margin: 0px;
             box-sizing: border-box;
@@ -21,8 +26,9 @@
             justify-content: space-around;
             background-color: #1c1a15;
             align-items: center;
-
-
+            position: fixed;
+            width: 100%;
+            flex-wrap: wrap;
         }
         nav a{
             margin-right: 3rem;
@@ -43,6 +49,7 @@
             display: flex;
             justify-content: space-around;
             margin: 1rem ;
+            flex-wrap: wrap;
         }
         #login{
             display: flex;
@@ -52,23 +59,27 @@
         #login form div label{
             color: whitesmoke;
             margin-right: 1rem ;
+            font-family: 'gothic';
         }
         #user, #password, #button{
             display: flex;
             width: 100%;
             justify-content: space-between;
             margin-bottom: 0.3rem;
+            
         }
         #boton{
             width: 100%;
             background-color: #ed9e00;
-            font
+            font-family: 'gothic';
+            border: darkgoldenrod;
         }
         input{
             background-color: transparent;
             border: transparent;
             border-bottom: 1px solid #ed9e00;
-           
+            font-family: 'gothic';
+            color: whitesmoke;
         }
 
     </style>
@@ -76,7 +87,7 @@
 <body>
     <nav>
         <div id="logo_nav">
-            <img src="img/rapture_logo.png" alt="">
+            <a href="index.html"><img src="img/rapture_logo.png" alt=""></a>
         </div>
         <div id="secciones">
                 <a href="">¿Que es Rapture?</a>
@@ -100,5 +111,6 @@
             </form>
         </div>
     </nav>
+
 </body>
 </html>
