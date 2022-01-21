@@ -50,6 +50,9 @@
             width: 80%;
         }
         .body_main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-top: 1rem;
             padding: 1.5rem;
             background-color: #202020ee;
@@ -75,56 +78,44 @@
             -webkit-background-clip:text;
             margin: 0.7rem 0px;
         }
-        table{
-            border: 2px whitesmoke solid ;
-            border-collapse: collapse;
-            ;
+        
+        .img_row{
+            display: flex;
+            flex-wrap: wrap;
+            width: 96%;
+            margin-top: 3rem;
         }
-        thead tr{
-            width: 100%;
-            color: black;
-            background-image: linear-gradient(
-                to right,
-                #6b3936 0,
-       	        #cb9b51 22%, 
-	            #f6e27a 45%,
-	            #fff89dc5 50%,
-	            #f6e27a 55%,
-	            #cb9b51 78%,
-	            #6b3936 100%
-            );
-            font-family: 'gothic';
-            font-weight: bold;
-            border: darkgoldenrod;
-            font-size: 1.7em;
-            
-        }
-        tr{
-            border: 2px whitesmoke solid;
-            height: 90px; 
-            max-height: 90px;
-            min-height: 90px;         
-        }
-        .par{
-            background-color: #826c4edd;
-        }
-        td{
-            width: 16.5%;
-            border: 2px whitesmoke solid;
-            font-family: 'Satisfy', cursive;
-            font-size: 1.6em;
+        .img_space{
+            width: 243px;
+            min-width: 100px;
+            height: 400px;
+            display: flex;
             text-align: center;
-            padding: 0.5rem;
+            position: relative;
         }
-        td .table_img{
-            
-            object-fit: fill;
+        .img_space img{
+            object-fit: cover;
             width: 100%;
             height: 100%;
+            vertical-align: bottom;
+            position: relative;
         }
-        .td_img{
-            padding: 0px;
+        .subtitle{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 0px;
+            background-color: rgb(22, 20, 20);
+            height: 10%;
+            width: 100%;
         }
+        .subtitle p{
+            color: whitesmoke;
+            width: 100%;
+            text-align: center;
+            font-family: 'gothic';
+        }
+
 
     </style>
 </head>
@@ -135,25 +126,62 @@
     </div>
     
     <div class="body_intro">
-        <h1>NUESTROS LIDERES</h1>
+        <h1>Nuestros Lideres</h1>
     </div>
     <div class="body_main">
         <div class="img_row">
-            <img src="img/andrew.jpg" alt="">
-            <img src="img/fontaine.png" alt="">
-            <img src="img/lamb.jpg" alt="">
-            <img src="img/sinclair.png" alt="">
-            <img src="img/steinman.jpg" alt="">
-            <img src="img/tenenbaum.png" alt="">
+
+            <div class="img_space">
+                <img src="img/andrew.jpg" alt="">
+                <div class="subtitle"><p>Andrew Ryan</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/fontaine.png" alt="">
+                <div class="subtitle"><p>Frank Fontaine</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/lamb.jpg" alt="">
+                <div class="subtitle"><p>Sophia Lamb</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/sinclair.png" alt="">
+                <div class="subtitle"><p>August Sinclair</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/steinman.jpg" alt="">
+                <div class="subtitle"><p>J.S Steinman</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/tenenbaum.png" alt="">
+                <div class="subtitle"><p>Brigid Tenenbaum</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/cohen.png" alt="">
+                <div class="subtitle"><p>Sander Cohen</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/atlas.png" alt="">
+                <div class="subtitle"><p>??ATLAS??</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/elisabeth.jpg" alt="">
+                <div class="subtitle"><p>Elisabeth</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/poole.png" alt="">
+                <div class="subtitle"><p> Stanley Poole</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/jack.png" alt="">
+                <div class="subtitle"><p>Jack Ryan</p></div>
+            </div>
+            <div class="img_space">
+                <img src="img/booker.png" alt="">
+                <div class="subtitle"><p>Booker Dewitt</p></div>
+            </div>
+  
         </div>
-        <div class="img_row">
-            <img src="img/cohen.png" alt="">
-            <img src="img/atlas.png" alt="">
-            <img src="img/" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+        <div class="img_row"></div>
     </div>
 </body>
 </html>
