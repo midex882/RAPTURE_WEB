@@ -27,7 +27,8 @@
             display: flex;
             margin: 0px;
             box-sizing: border-box;
-            background-image: url('img/background.jpg');
+            background-image: url('img/background4.jpg');
+            background-size: 15%;
             align-items: center;
             flex-direction: column;
         }
@@ -75,56 +76,54 @@
             -webkit-background-clip:text;
             margin: 0.7rem 0px;
         }
-        table{
-            border: 2px whitesmoke solid ;
-            border-collapse: collapse;
-            ;
-        }
-        thead tr{
+        details{
             width: 100%;
-            color: black;
-            background-image: linear-gradient(
-                to right,
-                #6b3936 0,
-       	        #cb9b51 22%, 
-	            #f6e27a 45%,
-	            #fff89dc5 50%,
-	            #f6e27a 55%,
-	            #cb9b51 78%,
-	            #6b3936 100%
-            );
+            display: flex;
+            cursor: pointer;
+        }
+        summary{
             font-family: 'gothic';
-            font-weight: bold;
-            border: darkgoldenrod;
-            font-size: 1.7em;
-            
+            color: whitesmoke;
+            font-size: 1.5rem;
         }
-        tr{
-            border: 2px whitesmoke solid;
-            height: 90px; 
-            max-height: 90px;
-            min-height: 90px;         
+        h2{
+            font-family: 'gothic';
+            color: whitesmoke;
+            font-size: 1.5rem;
         }
-        .par{
-            background-color: #826c4edd;
-        }
-        td{
-            width: 16.5%;
-            border: 2px whitesmoke solid;
-            font-family: 'Satisfy', cursive;
-            font-size: 1.6em;
-            text-align: center;
-            padding: 0.5rem;
-        }
-        td .table_img{
-            
-            object-fit: fill;
+        article{
+            display: flex;
+            justify-content: space-around;
             width: 100%;
-            height: 100%;
         }
-        .td_img{
-            padding: 0px;
+        
+        p{
+            width: 80%;
+            font-family: 'gothic';
+            font-size: 1.2rem;
+            text-align: justify;
         }
+        figcaption{
+            text-align: center;
+            font-family: 'gothic';
+            font-size: 0.9em;
+            margin: 0.5rem ;
+        }
+        figure{
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: whitesmoke 1px solid;
+            padding: 1rem;
+            margin: 1.5rem 0px;
+            height: fit-content;
+            
+        }
+        figure img{
+            width: 100%;
+        }
+        
 
     </style>
 </head>
@@ -135,17 +134,60 @@
     </div>
     
     <div class="body_intro">
-        <h1>NUESTROS LIDERES</h1>
+        <h1>Detalles Sobre Rapture</h1>
     </div>
     <div class="body_main">
-        <div class="img_row">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+        <h2>ADAM</h2>
+        <details>
+            <summary>Descubre más</summary>
+            <article>
+                
+                    <p> El Adam es, probablemente, el mayor descubrimiento para la humanidad desde la corriente eléctria. Esta sustancia especial nos permite sustituir nuestras
+                        células por versiones madre de estas, permitiendo reescribir nuestro código genético para convertirnos en mucho más de lo que podríamos soñar; encender
+                        fuego con un chasquido de dedos, invocar el poder del rayo con estirar la mano, teletransportarnos de un lugar a otro en segundos... Todo ello es posible
+                        gracias al ADAM, pero para utilizar las capacidades que otorga la modificación genética, también es necesaria otra sustancia, a la que nuestra ingeniera
+                        genética más prometedora; Brigid Tenenbaum, ha bautizado EVE. Esta sustancia es necesaria para la síntesis de unas proteíneas especiales que nuestro cuerpo
+                        no fabrica de manera natural, y sin la cual los plásmidos no funcionarían. Tanto el ADAM como el EVE se extraen de una babosa marina descubierta recientemente
+                        entre los cimientos de nuestra amada ciudad. Su allazgo fue casual, pues se debió al relato de un pescador que había quedado lisiado en un accidente. El
+                        pescador explicaba que, tras entrar en contacto con la babosa, el brazo que le faltaba volvió a crecer poco a poco. De esta manera, y con duro esfuerzo, los
+                        plásmidos llegaron a Rapture.
+                    </p>
+                    <figure>
+                        <img src="img/slug.jpg" alt="">
+                        <figcaption>La babosa del ADAM</figcaption>
+                    </figure>
+            </article>
+        </details>
+
+        <h2>BIG DADDIES Y LITTLE SISTERS</h2>
+        <details>
+            <summary>Descubre más</summary>
+            <article>
+                    <p>
+                        Cuando el ADAM comenzó a popularizarse en Rapture, nos dimos cuenta de que las cantidades que producían las babosas de nuestras granjas no era suficiente
+                        para suplir la demanda en el momento, así que a Frank Fontaine, empresario prominente y dueño de "Albergues para Pobres Fontaine", pensó en que se podría
+                        aprovechar a los huérfanos de Rapture y darles un empleo. Es cierto que solo funcionaba con las niñas pequeñas, pero al insertar una babosa en el estómago
+                        de las pequeñas, se creaba una relación simbiótica entre ambos seres, confiriéndole la inmortalidad a la niña y una capacidad de producir cantidades
+                        inmensas de ADAM a la babosa. Una vez preparadas, las "Little Sisters" recorrerían los pasillos de Rapture recogiendo el ADAM de aquellos que ya no lo
+                        necesitaban, produciendo mucho más. Pero aún quedaba un problema; Pese a ser técnicamente inmortales, estas niñas podían ser asesinadas si se arrancaba la
+                        babosa de su interior, y esto es algo que muchos querrían hacer para obtener aún más ADAM.
+
+                        Para protegerlas, se creó a los "Big Daddies"; grandes humanos modificados en trajes de buceo de gran profundidad con taladros industriales y otras herramientas
+                        en sus manos para defender a las little sisters. Usando sujetos repletos de ADAM e inyectando sus órganos directamente dentro de los trajes, la escafandra y el
+                        traje de lona se convertían en su piel y huesos; garantizando una resistencia sobrehumana. Los Big Daddies siempre acompañarán a una Little Sister, y su
+                        condicionamiento mental les obliga a poner la vida de la pequeña por delante de la suya propia; ¿No es acaso hermoso?.
+                    </p>
+    
+
+                    <figure>
+                        <img src="img/big_daddy.jpg" alt="">
+                        <figcaption>Un Big Daddy con su Little Sister</figcaption>
+                    </figure>
+            </article>
+        </details>
+        
+        
+        
     </div>
 </body>
 </html>
