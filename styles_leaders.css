@@ -105,6 +105,7 @@ h1{
     flex-wrap: wrap;
     width: 96%;
     margin-top: 3rem;
+    justify-content: center;
 }
 .img_space{
     width: 243px;
