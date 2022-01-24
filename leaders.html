@@ -32,19 +32,55 @@
             align-items: center;
             flex-direction: column;
         }
+        nav{
+            top: 0px;
+            display: flex;
+            justify-content: flex-start;
+            background-color: #22201b;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            flex-wrap: wrap;
+            z-index: 2;
+        }
+        nav a{
+            margin: 0px 2rem;
+            text-decoration: none;
+            
+            font-family: 'andes';
+            font-size: 3rem;
+            color: transparent;
+            background-image: linear-gradient(
+	            to right,
+	            #6b3936 0,
+       	        #cb9b51 22%, 
+	            #f6e27a 45%,
+	            #f6f2c0 50%,
+	            #f6e27a 55%,
+	            #cb9b51 78%,
+	            #6b3936 100%
+	            );
+            -webkit-background-clip:text;
+        }
+        #secciones{
+            display: flex;
+            justify-content: space-around;
+            margin: 1rem ;
+            flex-wrap: wrap;
+        }
         #logo_nav{
             display: flex;
             width: fit-content;
         }
         #logo_nav img{
-            width: 5.5rem;
+            width: 4rem;
             margin: 1rem ;
         }
         .body_intro{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 1rem;
+            margin-top: 9rem;
             background-color: #202020ee;
             
             color: whitesmoke;
