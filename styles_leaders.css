@@ -1,0 +1,139 @@
+@font-face {
+    font-family:'andes' ;
+    src: url('fonts/Andes.ttf');
+}
+@font-face {
+    font-family:'gothic';
+    src: url('fonts/gothic.ttf');
+}
+
+body{
+    display: flex;
+    margin: 0px;
+    box-sizing: border-box;
+    background-image: url('img/background3.jpg');
+    background-size: 30%;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #22201b;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+nav a{
+    margin: 0px 2rem;
+    text-decoration: none;
+    
+    font-family: 'andes';
+    font-size: 3rem;
+    color: transparent;
+    background-image: linear-gradient(
+        to right,
+        #6b3936 0,
+           #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #6b3936 100%
+        );
+    -webkit-background-clip:text;
+}
+#secciones{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem ;
+    flex-wrap: wrap;
+}
+#logo_nav{
+    display: flex;
+    width: fit-content;
+}
+#logo_nav img{
+    width: 4rem;
+    margin: 1rem ;
+}
+.body_intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
+    background-color: #202020ee;
+    
+    color: whitesmoke;
+    width: 80%;
+}
+.body_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #202020ee;
+    width: 80%;
+    color: #d6d6d6;
+}
+h1{
+    text-align: center;
+    width: fit-content;
+    font-family: 'andes';
+    font-size: 3rem;
+    color: transparent;
+    background-image: linear-gradient(
+        to right,
+        #6b3936 0,
+           #cb9b51 22%, 
+        #f6e27a 45%,
+        #fff89dc5 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #6b3936 100%
+        );
+    -webkit-background-clip:text;
+    margin: 0.7rem 0px;
+}
+
+.img_row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    margin-top: 3rem;
+}
+.img_space{
+    width: 243px;
+    min-width: 100px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+.img_space img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    position: relative;
+}
+.subtitle{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(22, 20, 20);
+    height: 10%;
+    width: 100%;
+}
+.subtitle p{
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    font-family: 'gothic';
+}
+
