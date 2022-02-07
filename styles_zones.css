@@ -102,7 +102,7 @@ table{
     background-color: #0d0c0cDD;
     border: 2px whitesmoke solid ;
     border-collapse: collapse;
-    display: block;
+    
     overflow: auto;
 }
 thead tr{
@@ -150,4 +150,7 @@ td .table_img{
 }
 .td_img{
     padding: 0px;
+}
+table *{
+    box-sizing: border-box;
 }
