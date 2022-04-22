@@ -154,3 +154,49 @@ td .table_img{
 table *{
     box-sizing: border-box;
 }
+#tablaMovil tr:nth-of-type(4n+1)
+{
+    width: 100%;
+    color: black;
+    background-image: linear-gradient(
+        to right,
+        #6b3936 0,
+           #cb9b51 22%, 
+        #f6e27a 45%,
+        #fff89dc5 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #6b3936 100%
+    );
+    font-family: 'gothic';
+    font-weight: bold;
+    border: darkgoldenrod;
+    font-size: 1.7em;
+}
+#tablaMovil ul{
+    margin: 0px 0.1rem;
+}
+#tablaMovil tr,td{
+    height: fit-content;
+}
+#tabalaMovil th{
+    font-family: 'Merriweather', serif;
+}
+#tablaMovil  th:nth-of-type(2n+1)
+{
+    height: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+#tablaMovil{
+    display: none;
+}
+@media (max-width: 578px)
+{
+    #tablaMovil{
+        display:table;
+    }
+    #tablaOrdenador{
+        display: none;
+    }
+}
